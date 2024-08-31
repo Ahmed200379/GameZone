@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Game>
+@using GameZone.settings
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@if (!Model.Any())
+{
+    <div class="alert alert-secondary mt-5 text-center">
+        <strong>NO Games!</strong> No games added yet...
+    </div>
+}
+else
+{
+    <div class="container mt-5">
+        <div class="row">
+            @foreach (var game in Model)
+            {
+                <div class="col-lg-4 col-md-6 mb-5 mt-5">
+                    <a class="card text-decoration-none shadow-lg" style="height: 400px;" asp-controller="Games" asp-action="Details" asp-route-id="@game.Id">
+                        <div class="card-header text-center bg-primary text-white">
+                            <h3>@game.Name</h3>
+                        </div>
+                        <img class="card-img-top img-fluid" style="height: 200px; object-fit: cover;" src="@($"{ConstantsNeeded.ImagesPath}/{game.Cover}")" alt="@game.Name Cover">
+                        <div class="card-body">
+                            <span class="badge bg-success">@game.Category.Name</span>
+                            <p class="card-text mt-2 text-muted flex-grow-1">@game.Description</p>
+                        </div>
+                        <div class="card-footer text-center bg-light">
+                            @foreach (var device in game.Device)
+                            {
+                                <i class="@device.Device.Icon me-2 fs-4"></i>
+                            }
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+}

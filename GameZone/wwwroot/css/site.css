@@ -1,0 +1,115 @@
+* {
+    font-family: 'Chakra Petch',sans-serif;
+}
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.cover-preview{
+    max-height:500px;
+    border-radius: 8px;
+}
+textarea {
+    width: 100%; /* Make the textarea take up the full width of its container */
+    height: 150px; /* Adjust the height to make it more user-friendly */
+    padding: 10px; /* Add some padding for better text visibility */
+    border: 1px solid #333; /* Border color matching your design */
+    border-radius: 4px; /* Slightly rounded corners */
+    background-color: #333; /* Background color to match the theme */
+    color: #fff; /* Text color */
+    font-size: 14px; /* Adjust the font size for readability */
+    resize: vertical; /* Allow users to resize the textarea vertically */
+}
+.select2-container--default .select2-selection--single {
+    background-color: #333; /* Dark gray background */
+    border: 1px solid #555; /* Medium gray border */
+    border-radius: 4px;
+    color: #fff; /* White text */
+}
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        color: #eee; /* Lighter gray text */
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__clear {
+        color: #999; /* Light gray text */
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__arrow {
+        background-color: #444; /* Dark gray background */
+        border: none;
+        border-left: 1px solid #555; /* Medium gray border */
+    }
+
+.select2-container--default .select2-selection--multiple {
+    background-color: #333; /* Dark gray background */
+    border: 1px solid #555; /* Medium gray border */
+    color: #fff; /* White text */
+}
+
+    .select2-container--default .select2-selection--multiple .select2-selection__choice {
+        background-color: #444; /* Slightly lighter gray */
+        border: 1px solid #555; /* Medium gray border */
+        color: #fff; /* White text */
+    }
+
+    .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+        color: #ccc; /* Light gray text */
+    }
+
+        .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
+            color: #fff; /* White on hover */
+        }
+
+.select2-container--default .select2-dropdown {
+    background-color: #333; /* Dark gray background */
+    border: 1px solid #555; /* Medium gray border */
+    color: #fff; /* White text */
+}
+
+.select2-container--default .select2-results__option {
+    color: #eee; /* Lighter gray text */
+    background-color: #333; /* Dark gray background */
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #555; /* Medium gray background for highlighted option */
+    color: #fff; /* White text */
+}
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: #444; /* Dark gray background for selected option */
+    color: #fff; /* White text */
+}
+
+.select2-container--default .select2-results__group {
+    background-color: #222; /* Very dark gray */
+    color: #ccc; /* Light gray text */
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    background-color: #333; /* Dark gray background */
+    border: 1px solid #555; /* Medium gray border */
+    color: #fff; /* White text */
+}
+inpu{
+    background-color: #333;
+}
